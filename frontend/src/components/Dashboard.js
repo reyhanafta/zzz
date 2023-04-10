@@ -70,14 +70,14 @@ const Dashboard = () => {
 
   return (
     <div className='container mt-5'>
-        <h1 className='title is-4'>Selamat datang {name} !</h1>
+        <h1 className='title is-3'>Selamat datang {name} !</h1>
         <table className='table is-danger is-fullwidth mt-3'>
             <thead>
                 <tr>
                     <th>No. </th>
                     <th>Nama</th>
                     <th>Email</th>
-                    <th>Opsi</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -94,6 +94,7 @@ const Dashboard = () => {
                 ))}
             </tbody>
         </table>
+<h2 className='title is-6 is-family-code'>{token}</h2>
     </div>
   )
 }

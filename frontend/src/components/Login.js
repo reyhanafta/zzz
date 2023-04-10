@@ -24,13 +24,13 @@ const Login = () => {
     }
 
   return (
-    <section className="hero has-background-black is-fullheight is-fullwidth">
+    <section className="hero has-background-primary-dark is-fullheight is-fullwidth">
       <div className="hero-body">
         <div className="container">
             <div className='columns is-centered'>
                 <div className='column is-8-desktop'>
                     <form className='box' onSubmit={Auth}>
-                    <h1 className='title has-text-left is-size-2'>LOGIN</h1>
+                    <h1 className='title has-text-centered is-size-2'>LOGIN</h1>
                         <div className='field mt-5'>
                             <label className='label'>Masukkan email:</label>
                             <div className='controls'>
@@ -46,7 +46,7 @@ const Login = () => {
                             </div>
                         </div>
                         <div className='field mt-6'>
-                            <button className='button is-danger is-fullwidth'>Login</button>
+                            <button className='button is-dark is-fullwidth'>Login</button>
                         </div>
                         <Link to={"register"}>Tidak punya akun ?</Link>
                         <p className='has-text-centered'>{msg}</p>

@@ -15,11 +15,11 @@ const Navbar = () => {
     }
 
   return (
-    <nav className="navbar is-light" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
         <div className="container">
       <div className="navbar-brand">
         <a className="navbar-item" href="https://bulma.io">
-          <h1 className='has-text-weight-bold is-size-2'>Kelompok 11</h1>
+          <h1 className='has-text-weight-bold is-size-2'>Z-SIGN</h1>
         </a>
     
         <a href="/" role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <button onClick={logout} className="button is-light">
+              <button onClick={logout} className="button is-primary">
                 Log Out
               </button>
             </div>

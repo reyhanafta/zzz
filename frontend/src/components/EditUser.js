@@ -32,41 +32,44 @@ const getUserById = async () =>{
 }
 
   return (
-    <div className="columns mt-6 ml-6">
-        <h1 className='title is-2 ml-5 mb-5'>Edit Data</h1>
-        <div className="column is-one-third is-center mt-6">
-            <form onSubmit={updateUser}>
-                <div className="field">
-                    <label className="label">Nama</label>
-                    <div className="control">
-                        <input 
-                            type="text" 
-                            className="input" 
-                            value={name} 
-                            onChange={(e)=> setName(e.target.value)}
-                            placeholder='Nama'
-                        />
-                    </div>
-                </div>
-                <div className="field">
-                    <label className="label">Email</label>
-                    <div className="control">
-                        <input 
-                            type="text" 
-                            className="input" 
-                            value={email} 
-                            onChange={(e)=> setEmail(e.target.value)}
-                            placeholder='Email'/>
-                    </div>
-                </div>
-                <div className="field">
-                    <button type='submit' className='button is-dark'>
-                        Perbarui
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
+    
+      <><nav className="navbar is-primary" role="navigation" aria-label="main navigation">
+          <div className='container mt-5'>
+              <h1 className='title is-2 has-text-white-bis mb-5'>Edit Data</h1></div>
+          </nav>
+          <div className="columns ml-6">
+              <div className="column is-two-fifths mt-6">
+                  <form onSubmit={updateUser}>
+                      <div className="field">
+                          <label className="label">Nama</label>
+                          <div className="control">
+                              <input
+                                  type="text"
+                                  className="input"
+                                  value={name}
+                                  onChange={(e) => setName(e.target.value)}
+                                  placeholder='Nama' />
+                          </div>
+                      </div>
+                      <div className="field">
+                          <label className="label">Email</label>
+                          <div className="control">
+                              <input
+                                  type="text"
+                                  className="input"
+                                  value={email}
+                                  onChange={(e) => setEmail(e.target.value)}
+                                  placeholder='Email' />
+                          </div>
+                      </div>
+                      <div className="field">
+                          <button type='submit' className='button is-dark'>
+                              Perbarui
+                          </button>
+                      </div>
+                  </form>
+              </div>
+          </div></>
   )
 }
 
